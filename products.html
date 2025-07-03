@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Arolizen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6295/6295417.png">
+    <style>
+        .team-strength-banner {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: -40px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .team-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(66, 133, 244, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .team-icon i {
+            font-size: 28px;
+            color: var(--primary-color);
+        }
+        
+        .team-stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 25px;
+        }
+        
+        .team-stat-item {
+            text-align: center;
+        }
+        
+        .team-stat-item h4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .team-stat-item p {
+            font-size: 0.95rem;
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Arolizen
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title Section -->
+    <section class="page-hero bg-light py-5 mb-0">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-12 text-center mt-5" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-4">Our Products</h1>
+                    <p class="lead mb-0">Explore our range of innovative software solutions designed to help your business thrive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Strength Banner -->
+    <section class="py-3">
+        <div class="container">
+            <div class="team-strength-banner" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="mb-3">Our Team Strength</h3>
+                        <p>With a team of <strong>15 talented professionals</strong>, Arolizen combines technical expertise, creative thinking, and industry knowledge to deliver exceptional digital solutions. Our collaborative team works together to bring your ideas to life.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-stats">
+                            <div class="team-stat-item">
+                                <div class="team-icon mx-auto">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h4>6</h4>
+                                <p>Developers</p>
+                            </div>
+                            <div class="team-stat-item">
+                                <div class="team-icon mx-auto">
+                                    <i class="bi bi-palette"></i>
+                                </div>
+                                <h4>4</h4>
+                                <p>Designers</p>
+                            </div>
+                            <div class="team-stat-item">
+                                <div class="team-icon mx-auto">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h4>5</h4>
+                                <p>QA & Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Projects Section -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <!-- Modern Filter Categories -->
+            <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <div class="products-filter" data-aos="fade-up">
+                        <button class="filter-btn active" data-filter="all">
+                            <span class="filter-text">All Products</span>
+                        </button>
+                        <button class="filter-btn" data-filter="web development">
+                            <span class="filter-text">Web Development</span>
+                        </button>
+                        <button class="filter-btn" data-filter="mobile apps">
+                            <span class="filter-text">Mobile Apps</span>
+                        </button>
+                        <button class="filter-btn" data-filter="pos systems">
+                            <span class="filter-text">POS Systems</span>
+                        </button>
+                        <button class="filter-btn" data-filter="e-commerce">
+                            <span class="filter-text">E-Commerce</span>
+                        </button>
+                        <button class="filter-btn" data-filter="enterprise solutions">
+                            <span class="filter-text">Enterprise Solutions</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modern products Grid - Masonry Layout -->
+            <div class="row products-grid g-4">
+                <!-- Restaurant Management System -->
+                <div class="col-md-6 col-lg-4 products-item-wrapper" data-category="web development,pos systems" data-aos="fade-up" data-aos-delay="100">
+                    <div class="products-card">
+                        <div class="products-img">
+                            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant Management System" class="img-fluid">
+                        </div>
+                        <div class="products-info">
+                            <div class="products-tags">
+                                <span class="products-tag">Web Development</span>
+                                <span class="products-badge">Featured</span>
+                            </div>
+                            <h3>Restaurant Management System</h3>
+                            <p>Complete restaurant management solution with order processing, inventory, and staff management.</p>
+                            <div class="products-links">
+                                <a href="#" class="products-link">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a href="#" class="products-details-link" data-bs-toggle="modal" data-bs-target="#productsModal">
+                                    Details <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Tracking App -->
+                <div class="col-md-6 col-lg-4 products-item-wrapper" data-category="mobile apps" data-aos="fade-up" data-aos-delay="200">
+                    <div class="products-card">
+                        <div class="products-img">
+                            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fitness Tracking App" class="img-fluid">
+                        </div>
+                        <div class="products-info">
+                            <div class="products-tags">
+                                <span class="products-tag">Mobile Apps</span>
+                                <span class="products-badge">Health</span>
+                            </div>
+                            <h3>Fitness Tracking App</h3>
+                            <p>Comprehensive fitness tracking with workout plans, nutrition guidance, and progress monitoring.</p>
+                            <div class="products-links">
+                                <a href="#" class="products-link">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a href="#" class="products-details-link" data-bs-toggle="modal" data-bs-target="#productsModal">
+                                    Details <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Real Estate Platform -->
+                <div class="col-md-6 col-lg-4 products-item-wrapper" data-category="web development,e-commerce" data-aos="fade-up" data-aos-delay="300">
+                    <div class="products-card">
+                        <div class="products-img">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Real Estate Platform" class="img-fluid">
+                        </div>
+                        <div class="products-info">
+                            <div class="products-tags">
+                                <span class="products-tag">Web Development</span>
+                                <span class="products-tag">Real Estate</span>
+                            </div>
+                            <h3>Real Estate Platform</h3>
+                            <p>Property listing and management platform with virtual tours and agent collaboration tools.</p>
+                            <div class="products-links">
+                                <a href="#" class="products-link">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a href="#" class="products-details-link" data-bs-toggle="modal" data-bs-target="#productsModal">
+                                    Details <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event Management System -->
+                <div class="col-md-6 col-lg-4 products-item-wrapper" data-category="web development" data-aos="fade-up" data-aos-delay="400">
+                    <div class="products-card">
+                        <div class="products-img">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80" alt="Event Management System" class="img-fluid">
+                        </div>
+                        <div class="products-info">
+                            <div class="products-tags">
+                                <span class="products-tag">Web Development</span>
+                                <span class="products-badge">Events</span>
+                            </div>
+                            <h3>Event Management System</h3>
+                            <p>Complete event planning and management solution with ticketing and attendee tracking.</p>
+                            <div class="products-links">
+                                <a href="#" class="products-link">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a href="#" class="products-details-link" data-bs-toggle="modal" data-bs-target="#productsModal">
+                                    Details <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smart Home Automation -->
+                <div class="col-md-6 col-lg-4 products-item-wrapper" data-category="mobile apps" data-aos="fade-up" data-aos-delay="500">
+                    <div class="products-card">
+                        <div class="products-img">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Smart Home Automation" class="img-fluid">
+                        </div>
+                        <div class="products-info">
+                            <div class="products-tags">
+                                <span class="products-tag">IoT</span>
+                                <span class="products-tag">Mobile Apps</span>
+                            </div>
+                            <h3>Smart Home Automation</h3>
+                            <p>IoT-based home automation system with mobile app control and energy monitoring.</p>
+                            <div class="products-links">
+                                <a href="#" class="products-link">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a href="#" class="products-details-link" data-bs-toggle="modal" data-bs-target="#productsModal">
+                                    Details <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Learning Management System -->
+                <div class="col-md-6 col-lg-4 products-item-wrapper" data-category="web development" data-aos="fade-up" data-aos-delay="600">
+                    <div class="products-card">
+                        <div class="products-img">
+                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Learning Management System" class="img-fluid">
+                        </div>
+                        <div class="products-info">
+                            <div class="products-tags">
+                                <span class="products-tag">Web Development</span>
+                                <span class="products-tag">Education</span>
+                            </div>
+                            <h3>Learning Management System</h3>
+                            <p>Comprehensive e-learning platform with course creation, student management, and progress tracking.</p>
+                            <div class="products-links">
+                                <a href="#" class="products-link">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                                <a href="#" class="products-details-link" data-bs-toggle="modal" data-bs-target="#productsModal">
+                                    Details <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- products Load More Button -->
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <button class="btn btn-outline-primary btn-load-more" data-aos="fade-up">
+                        <span>Load More Projects</span>
+                        <i class="bi bi-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- products Modal -->
+    <div class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productsModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" id="modalCloseBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="modal-gallery">
+                                <div class="main-image mb-3">
+                                    <img src="" alt="Project Image" class="img-fluid rounded">
+                                </div>
+                                <div class="thumbnail-container">
+                                    <div class="thumbnail active">
+                                        <img src="" alt="Thumbnail 1" class="img-fluid rounded">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="" alt="Thumbnail 2" class="img-fluid rounded">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="" alt="Thumbnail 3" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-details">
+                                <h2 class="project-title">Project Title</h2>
+                                <div class="project-category mb-3">
+                                    <span class="badge bg-primary">Category</span>
+                                </div>
+                                <div class="project-overview mb-4">
+                                    <h5>Project Overview</h5>
+                                    <p>Project description goes here...</p>
+                                </div>
+                                <div class="project-features mb-4">
+                                    <h5>Key Features</h5>
+                                    <ul class="feature-list">
+                                        <li><i class="bi bi-check-circle-fill"></i> Feature 1</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Feature 2</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Feature 3</li>
+                                    </ul>
+                                </div>
+                                <div class="project-tech mb-4">
+                                    <h5>Technologies Used</h5>
+                                    <div class="tech-stack">
+                                        <span class="badge bg-light text-dark">React</span>
+                                        <span class="badge bg-light text-dark">Node.js</span>
+                                        <span class="badge bg-light text-dark">MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="project-cta">
+                                    <a href="#" class="btn btn-primary">Visit Project <i class="bi bi-box-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Our Development Process</h2>
+                <p>We follow Agile and DevOps methodologies to deliver value continuously</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3>Collaborative Planning</h3>
+                        <p>We work closely with stakeholders to understand requirements and break them into manageable user stories and sprints.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-kanban"></i>
+                        </div>
+                        <h3>Iterative Development</h3>
+                        <p>Our teams work in short sprints, delivering functional software increments with regular reviews and adaptation.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-infinity"></i>
+                        </div>
+                        <h3>CI/CD Pipeline</h3>
+                        <p>We implement continuous integration and deployment practices, automating testing and delivery for faster feedback.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h3>Continuous Improvement</h3>
+                        <p>We monitor performance, gather feedback, and implement improvements through regular retrospectives and analytics.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-12">
+                    <div class="bg-white p-4 rounded-3 shadow-sm" data-aos="fade-up" data-aos-offset="100" data-aos-duration="500" data-aos-once="true">
+                        <h4 class="text-center mb-4">Our Approach</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="approach-icon me-3">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Client Collaboration</h5>
+                                        <p>We believe in close collaboration with our clients throughout the project lifecycle. Your input and feedback are integral to our process, ensuring the final product aligns perfectly with your business goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="approach-icon me-3">
+                                        <i class="bi bi-lightning-charge-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Agile Methodology</h5>
+                                        <p>Our teams work in sprints with regular deliverables, allowing for flexibility, adaptability, and quick response to changing requirements or market conditions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="approach-icon me-3">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Quality Assurance</h5>
+                                        <p>Rigorous testing at every stage ensures we deliver high-quality, bug-free software that performs flawlessly across all platforms and devices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="approach-icon me-3">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Continuous Improvement</h5>
+                                        <p>We're committed to ongoing learning and improvement, constantly refining our processes and keeping pace with the latest technologies and industry best practices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="bg-white p-4 rounded-3 shadow-sm" data-aos="fade-up">
+                        <h3 class="mb-3">Team Expertise</h3>
+                        <p>Our professional team brings together diverse skills and specializations to deliver comprehensive solutions:</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-3">
+                                <div class="d-flex mb-3">
+                                    <div class="me-3">
+                                        <i class="bi bi-code-slash text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Full-Stack Developers</h5>
+                                        <p>Experts in both frontend and backend technologies</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex mb-3">
+                                    <div class="me-3">
+                                        <i class="bi bi-phone text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Mobile Developers</h5>
+                                        <p>Specialized in iOS and Android platforms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex mb-3">
+                                    <div class="me-3">
+                                        <i class="bi bi-palette text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>UI/UX Designers</h5>
+                                        <p>Creating intuitive and engaging interfaces</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex mb-3">
+                                    <div class="me-3">
+                                        <i class="bi bi-shield-check text-primary fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5>QA Engineers</h5>
+                                        <p>Ensuring software reliability and quality</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2>Ready to start your project?</h2>
+                    <p>Let's build something amazing together.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a href="index.html" class="footer-logo">
+                            Arolizen
+                        </a>
+                        <p class="mt-4">Arolizen provides innovative software solutions tailored to meet the unique needs of businesses across various industries. With our expert team of developers, designers, and project managers, we deliver high-quality software that drives growth and efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <div class="underline-blue mb-4"></div>
+                        <ul>
+                            <li><a href="index.html#home"><i class="bi bi-chevron-right"></i> Home</a></li>
+                            <li><a href="index.html#services"><i class="bi bi-chevron-right"></i> Services</a></li>
+                            <li><a href="index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="products.html"><i class="bi bi-chevron-right"></i> Products</a></li>
+                            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="underline-blue mb-4"></div>
+                        <div class="address">
+                            <p><i class="bi bi-geo-alt"></i> 123 Innovation Street, Tech Hub, New York, NY 10001</p>
+                            <p><i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
+                            <p><i class="bi bi-phone"></i> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="mailto:contact@example.com" target="_blank" title="Email Us" class="email-icon"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://wa.me/15551234567" target="_blank" title="WhatsApp" class="whatsapp-icon"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/Arolizen" target="_blank" title="LinkedIn" class="linkedin-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/Arolizen" target="_blank" title="Instagram" class="instagram-icon"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        <p>&copy; 2001 Arolizen. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-fab" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-transitions.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

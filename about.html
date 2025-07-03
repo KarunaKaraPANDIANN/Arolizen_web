@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Arolizen</title>
+    <meta name="description" content="Learn about Arolizen - our story, mission, values and the team behind our innovative software solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* Additional styles for the About page */
+        .about-intro {
+            padding: 120px 0 60px;
+        }
+        
+        .about-heading {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-subtitle {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .values-box {
+            background-color: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 10px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .values-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .values-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .values-box h3:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .timeline-item .year {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-section {
+            background-color: #f8f9fa;
+        }
+        
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .team-member h4 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .team-member p {
+            color: var(--gray-color);
+            font-size: 1.1rem;
+        }
+        
+        .location-section {
+            background-color: white;
+        }
+        
+        .location-card {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            height: 100%;
+        }
+        
+        .company-culture {
+            padding: 50px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Arolizen
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Introduction Section -->
+    <section class="about-intro text-center">
+        <div class="container">
+            <h1 class="about-heading" data-aos="fade-up">We Are Arolizen</h1>
+            <p class="about-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Arolizen is on a mission to re‑inspire what business software looks like. 
+                We are in the business of making software that works for the user - not the other way round.
+            </p>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box p-4 rounded-4 text-center h-100">
+                        <i class="bi bi-lightbulb display-5 mb-3 text-primary"></i>
+                        <h5>Meaningful Consultancy</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box p-4 rounded-4 text-center h-100">
+                        <i class="bi bi-trophy display-5 mb-3 text-primary"></i>
+                        <h5>Award Winning Design</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box p-4 rounded-4 text-center h-100">
+                        <i class="bi bi-infinity display-5 mb-3 text-primary"></i>
+                        <h5>End to End Services</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-image position-relative">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070" alt="Team Collaboration" class="img-fluid rounded-4 shadow">
+                        <div class="experience-badge" data-aos="fade-up" data-aos-delay="300">
+                            <span class="years">5+</span>
+                            <span class="text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <div class="section-header mb-4">
+                            <h2>Who We Are</h2>
+                            <p>Innovating Digital Solutions for Tomorrow</p>
+                        </div>
+                        <p class="lead mb-4">At Arolizen, we're more than just developers – we're digital innovators passionate about transforming ideas into powerful solutions.</p>
+                        <p>Founded in 2018, Arolizen has grown from a small tech startup to a dynamic digital solutions provider. Our team of talented developers, designers, and strategists work together to deliver cutting-edge solutions that drive business growth and innovation.</p>
+
+                        <div class="key-points mt-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="key-point">
+                                        <i class="bi bi-check-circle-fill text-primary"></i>
+                                        <span>Innovative Solutions</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="key-point">
+                                        <i class="bi bi-check-circle-fill text-primary"></i>
+                                        <span>Expert Team</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="key-point">
+                                        <i class="bi bi-check-circle-fill text-primary"></i>
+                                        <span>Quality Delivery</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="key-point">
+                                        <i class="bi bi-check-circle-fill text-primary"></i>
+                                        <span>Client Success</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Meet Our Team</h2>
+                <p>The Minds Behind Our Success</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Alex Johnson</h4>
+                            <p>Lead Developer</p>
+                            <div class="social-links">
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Sarah Chen</h4>
+                            <p>UI/UX Designer</p>
+                            <div class="social-links">
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Team Member" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Mike Ross</h4>
+                            <p>Backend Developer</p>
+                            <div class="social-links">
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Team Member" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Emma Wilson</h4>
+                            <p>Project Manager</p>
+                            <div class="social-links">
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Our Core Values</h2>
+                <p>What Drives Us Forward</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions that keep our clients ahead of the curve.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>We believe in the power of teamwork and foster an environment where ideas are shared freely and creativity flourishes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h3>Excellence</h3>
+                        <p>We maintain the highest standards in everything we do, from code quality to client communication and project delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info-wrapper">
+                        <div class="section-header mb-4">
+                            <h2>Get in Touch</h2>
+                            <p>We'd Love to Hear from You</p>
+                        </div>
+                        <p class="lead mb-4">Ready to start your next project? Contact us today and let's discuss how we can help bring your ideas to life.</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="details">
+                                    <h5>Location</h5>
+                                    <p>123 Innovation Street, Tech Hub, New York, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="details">
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="details">
+                                    <h5>Phone</h5>
+                                    <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links mt-4">
+                            <a href="mailto:contact@example.com" class="social-icon email-icon" title="Email Us"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://wa.me/15551234567" class="social-icon whatsapp-icon" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/arolizen" class="social-icon linkedin-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/arolizen" class="social-icon instagram-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form-card">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" class="contact-form mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="service" aria-label="Service">
+                                            <option selected disabled>Select a service</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Mobile App Development">Mobile App Development</option>
+                                            <option value="UI/UX Design">UI/UX Design</option>
+                                            <option value="Cloud Solutions">Cloud Solutions</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <label for="service">Service Interested In</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" style="height: 150px" placeholder="Your Message" required></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Send Message <i class="bi bi-send"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a href="index.html" class="footer-logo">
+                            Arolizen
+                        </a>
+                        <p class="mt-4">Arolizen provides innovative software solutions tailored to meet the unique needs of businesses across various industries. With our expert team of developers, designers, and project managers, we deliver high-quality software that drives growth and efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <div class="underline-blue mb-4"></div>
+                        <ul>
+                            <li><a href="index.html#home"><i class="bi bi-chevron-right"></i> Home</a></li>
+                            <li><a href="index.html#services"><i class="bi bi-chevron-right"></i> Services</a></li>
+                            <li><a href="index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="products.html"><i class="bi bi-chevron-right"></i> Products</a></li>
+                            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="underline-blue mb-4"></div>
+                        <div class="address">
+                            <p><i class="bi bi-geo-alt"></i> xyz address of your company</p>
+                            <p><i class="bi bi-envelope"></i> <a href="mailto:admin@arolizen.com">admin@arolizen.com</a></p>
+                            <p><i class="bi bi-phone"></i> <a href="tel:+12345678">+91 12345678</a></p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="mailto:admin@arolizen.com" target="_blank" title="Email Us" class="email-icon"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp" class="whatsapp-icon"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/arolizen/" target="_blank" title="LinkedIn" class="linkedin-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/arolizen/" target="_blank" title="Instagram" class="instagram-icon"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        <p>&copy; 2023 Arolizen. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-transitions.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html> 
