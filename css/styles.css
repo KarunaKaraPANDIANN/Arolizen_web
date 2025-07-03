@@ -550,8 +550,8 @@ img {
     font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
     font-size: 1.7rem;
     letter-spacing: 2px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.18), 0 1px 0 #ffffff;
-    background: linear-gradient(90deg, #ec1313 20%, #fff 80%);
+    
+    background: linear-gradient(90deg, #ffffff 20%, #fff 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -560,7 +560,7 @@ img {
     transition: background 0.4s;
 }
 #navbar-company:hover {
-    background: linear-gradient(90deg, #fff 20%, #00bcd4 80%);
+    background: linear-gradient(90deg, #fff 20%, #eae6e6 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
