@@ -551,7 +551,7 @@ img {
     font-size: 1.7rem;
     letter-spacing: 2px;
     
-    background: linear-gradient(90deg, #000000 20%, #000000 80%);
+    background: linear-gradient(90deg, #c21c1c 20%, #d61717 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -560,7 +560,7 @@ img {
     transition: background 0.4s;
 }
 #navbar-company:hover {
-    background: linear-gradient(90deg, #fff 20%, #000000 80%);
+    background: linear-gradient(90deg, #e4e2e2 20%, #bb4444 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
